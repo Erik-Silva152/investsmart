@@ -1,0 +1,160 @@
+:root {
+    --ouro: #FFD700;           
+    --verde-menta: #98FF98;    
+    --azul-celeste: #00BFFF;  
+    --roxo-lavanda: #E6E6FA;  
+    --vermelho-coral: #FF6347;
+    --preto: #000000; 
+    --cinza-chumbo: #36454F;
+    --rosa-choque: #FF1493;    
+    --amarelo-sol: #FFD700;    
+    --azul-petróleo: #007BA7;  
+    --laranja-tangerina: #FFA500;
+    --verde-: #16aa16; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--verde-);
+    color: var(--ouro);
+    height: 15vh;
+    border-bottom: 5px solid var(--ouro);
+    text-shadow: 5px 5px 5px var(--cinza-chumbo);
+}
+
+header i{font-size:  4rem;}
+
+header h1{
+    font-size: 3rem;
+}
+
+main{
+    height: 80vh;
+    background-color: var(--cinza-chumbo);
+    display: flex;
+}
+
+form{
+    margin: auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: first baseline;
+    border: 5px solid var(--ouro);
+    background-color: var(--cinza-chumbo);
+    border-radius: 18px;
+    padding: 10px;
+    color: var(--ouro);
+    text-shadow: 3px 3px 3px var(--cinza-chumbo);
+}
+
+form h2, label, input{
+    width: 100%;
+}
+
+form h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+
+}
+
+form label{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+form input{
+    outline: none;
+    border: 2px solid var(--ouro);
+    border-radius: 5px;
+    background-color: transparent;
+    background-color: var(--verde-);
+    height: 40px;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: var(--cinza-chumbo);
+    font-weight: 800;
+    margin-bottom: 30px;
+    transition: all 1s ease;
+}
+
+form input:focus{
+    background-color: var(--ouro);
+    
+
+    
+}
+
+input::placeholder{
+    color: var(--cinza-chumbo);
+}
+
+form button{
+    width: 100%;
+    height: 60px;
+    background-color: var(--amarelo-sol);
+    color: var(--verde-);
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 3px solid var(--preto);
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+form button:hover{
+    background: var(--verde-menta);
+    border-radius: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: var(--verde-);
+    height: 5vh;
+    border-top: 5px solid var(--ouro);
+    text-shadow:5px 5px 5px var(--cinza-chumbo);
+}
+
+footer i{
+    font-size: 1.5rem;
+
+}
+
+footer p{
+    font-size: 1rem;
+}
